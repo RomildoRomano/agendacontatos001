@@ -26,7 +26,7 @@ public class AtualizarContatoController {
 			// capturando o id enviado na URL (Query String)
 			Integer idContato = Integer.parseInt(request.getParameter("id"));
 
-			// obter o usu�rio autenticado no sistema
+			// obter o usuário autenticado no sistema
 			Usuario usuario = (Usuario) request.getSession().getAttribute("auth_usuario");
 
 			// consultar o contato no banco de dados
@@ -48,7 +48,7 @@ public class AtualizarContatoController {
 
 	}
 
-//método para processar o evento de SUBMIT (POST) do formul�rio
+//método para processar o evento de SUBMIT (POST) do formulário
 	@RequestMapping(value = "/admin/atualizar-contato", method = RequestMethod.POST)
 	public ModelAndView atualizarContato(HttpServletRequest request) {
 
@@ -56,7 +56,7 @@ public class AtualizarContatoController {
 
 		try {
 
-			// capturar os campos do formul�rio
+			// capturar os campos do formulário
 			Contato contato = new Contato();
 
 			contato.setIdContato(Integer.parseInt(request.getParameter("idContato")));

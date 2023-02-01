@@ -25,7 +25,7 @@ public class ExcluirContatosController {
 			// capturar o id o contato envado na URL (QueryString)
 			Integer idContato = Integer.parseInt(request.getParameter("id"));
 
-			// capturar o usu�rio autenticado no sistema
+			// capturar o usuário autenticado no sistema
 			Usuario usuario = (Usuario) request.getSession().getAttribute("auth_usuario");
 
 			// capturando o contato no banco de dados

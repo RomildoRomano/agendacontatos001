@@ -191,7 +191,7 @@ public class ContatoRepository {
 		return contato; // retornando o objeto
 	}
 
-	// M�todo para consultar a quantidade de contatos por tipo
+	// Método para consultar a quantidade de contatos por tipo
 	public List<TipoQuantidadeDtos> countByTipo(Integer idUsuario) throws Exception {
 
 		// abrindo conex�o com o banco de dados
